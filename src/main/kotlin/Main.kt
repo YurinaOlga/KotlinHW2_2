@@ -2,7 +2,7 @@ fun main() {
     println(resultPayment("Maestro", 7_000_00, 100_000_00))
 }
 
-fun calculateCommission (typeCardAccount:String, amountOfPayCurrentMonth:Int = 0, amountCurrentPay: Int): String {
+fun calculateCommission (typeCardAccount:String,  amountCurrentPay: Int, amountOfPayCurrentMonth:Int = 0,): String {
     val levelFreeCommissionMasterCardMaestro = 75_000_00
     val amountPayOverLevelMasterCardMaestro = amountCurrentPay + amountOfPayCurrentMonth - levelFreeCommissionMasterCardMaestro
     val commissionOverLevelMasterCardMaestro = 0.06
@@ -24,7 +24,7 @@ fun calculateCommission (typeCardAccount:String, amountOfPayCurrentMonth:Int = 0
 
 }
 
-fun resultPayment (typeCardAccount: String, amountOfPayCurrentMonth: Int = 0, amountCurrentPay: Int): String  {
+fun resultPayment (typeCardAccount: String, amountCurrentPay: Int, amountOfPayCurrentMonth: Int = 0): String  {
     val maxPaymentCardOnTime = 150_000_00
     val maxPaymentCardMonth = 600_000_00
     val maxPaymentVkPayOnTime = 15_000_00
