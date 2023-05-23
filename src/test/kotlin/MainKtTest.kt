@@ -193,7 +193,7 @@ class MainKtTest {
 
         val result = resultPayment(typeCardAccount, amountCurrentPay , amountOfPayCurrentMonth)
 
-        assertEquals("Лимит карты Maestro превышен", result)
+        assertEquals("Лими карты Maestro превышен", result)
 
     }
 
